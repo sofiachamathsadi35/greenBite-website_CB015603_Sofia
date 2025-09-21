@@ -1,0 +1,242 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:'Times New Roman', Times, serif
+}
+body { 
+    line-height: 1.6;
+    background-color: #0a6d4c; 
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: medium;
+  background: #62cca0;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height:50px;
+  width:50px;
+}
+
+.logo img { 
+  height: 40px; 
+}
+
+.logo span { 
+  font-weight: bold; 
+  font-size: 1.2rem; 
+}
+
+.nav-links { 
+  list-style: none; 
+  display: flex; 
+  gap: 1.5rem; 
+}
+
+.nav-links a { 
+  text-decoration: none; 
+  color: #333; 
+  font-weight: 500; 
+}
+
+.nav-links a:hover { 
+  color: #ffffff; 
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(202, 248, 141);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#workoutForm {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #bcf2e1;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.btn {
+  display: block;
+  width: 40%;
+  padding: 0.8rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #256428;
+}
+
+.btn-secondary{
+  display: block;
+  width: 40%;
+  padding: 0.8rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.start {
+    background: #28a745;
+}
+
+button.stop {
+  background: #f44336;
+}
+
+button.reset {
+  background: #555;
+}
+
+#workout {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #FFF2EF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.timer-box {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #FFF2EF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+#exercise-image {
+  width: 300px;  
+  height: 200px;
+  object-fit: cover; 
+  margin: 10px auto 0 auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.exercise {
+  margin: 8px 0;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Featured */
+.featured { padding: 3rem 2rem; text-align: center; }
+.featured h2 {
+  font-family:'Times New Roman', Times, serif;
+  color:#fff;
+  margin-bottom: 2rem; }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #d0eebd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  max-width: 250px;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 40px;
+  background: #f0fdf4;
+}
+
+.newsletter h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.subscribe-box {
+  margin-top: 15px;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.subscribe-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subscribe-box button:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #62cca0;
+  color: #fff;
+  margin-top: 2rem;
+}

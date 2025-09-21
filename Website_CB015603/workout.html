@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes page</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="./images/greenBite logo.jpeg" alt="GreenBite Logo">
+        <span>greenBite</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="recipes.html"><b>Recipes</b></a></li>
+        <li><a href="calculator.html"><b>Calculator</b></a></li>
+        <li><a href="workout.html"><b>Workout</b></a></li>
+        <li><a href="mindfulness.html"><b>Mindfulness</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1>Fitness Workouts</h1>
+    <p><b>Discover workout routines tailored to your fitness level and goals.</b></p>
+</section>
+
+<form id="workoutForm">
+    <label for="bodyPart">Choose body part:</label>
+    <select id="bodyPart">
+        <option value="">Select</option> 
+        <option value="arms">Arms</option>
+        <option value="legs">Legs</option>
+        <option value="core">Core</option>
+        <option value="full">Full Body</option>
+        </select>
+        
+        <div class="form-group"> 
+            <label for="equipment">Choose Equipment</label> 
+            <select id="equipment" required> 
+                <option value="">Select</option> 
+                <option value="none">None</option> 
+                <option value="dumbbells">Dumbbells</option> 
+                <option value="resistance band">Resistance Band</option> 
+            </select> 
+        </div>
+        
+        <div class="actions">
+            <button type="button" id="generateBtn" class="btn">Generate Workout</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+</form>
+
+<div class="workout-box" id="workout"></div>
+
+<div class="timer-box" id="timerBox" style="display:none;">
+    <div class="exercise" id="currentExercise"></div>
+    <div class="timer" id="timer">30</div>
+    <img id="exercise-image" src="" alt="Exercise image" style="display:none;">
+    <button class="start" onclick="startTimer()">Start</button>
+    <button class="stop" onclick="stopTimer()">Stop</button>
+    <button class="reset" onclick="resetTimer()">Reset</button>
+</div>
+
+<section class="featured">
+    <h2>Workout Tips</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Warm Up</h3>
+            <p>Always start with 5-10 minutes of light cardio to prepare your body for exercise.</p>
+        </div>
+        <div class="card">
+            <h3>Stay Hydrated</h3>
+            <p>Drink water before, during, and after your workout to maintain optimal performance.</p>
+        </div>
+        <div class="card">
+            <h3>Listen to Your Body</h3>
+            <p>Rest when needed and don't push through pain. Recovery is part of progress.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p><b>&copy; 2025 GreenBite. All rights reserved.</b></p>
+    <h2>Stay Updated</h2>
+    <p>Get our latest recipes, workout tips, and mindfulness guides delivered to your inbox.</p>
+    <div class="subscribe-box">
+        <input type="email" class="subscribe-input" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+    </div>
+</footer>
+    <script src="workout.js"></script>  
+</body>
+</html>

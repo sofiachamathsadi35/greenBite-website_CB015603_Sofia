@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="./images/greenBite logo.jpeg" alt="GreenBite Logo">
+        <span>greenBite</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="recipes.html"><b>Recipes</b></a></li>
+        <li><a href="calculator.html"><b>Calculator</b></a></li>
+        <li><a href="workout.html"><b>Workout</b></a></li>
+        <li><a href="mindfulness.html"><b>Mindfulness</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-form-section">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below.</p>
+        
+        <div class="contact-form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                    <div class="error-message" id="emails-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            <div id="confirmation-message" class="hidden">Thank you for your feedback! We have received your message.</div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <h2>Find Our HQ</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7915.331071922134!2d80.6206841!3d7.278844650000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1758465142379!5m2!1sen!2slk" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+          
+    </div>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-button">What is GreenBite?</button>
+                <div class="accordion-content">
+                    <p>GreenBite is a wellness platform focused on providing healthy recipes, workout plans, and mindfulness guides to help you achieve a balanced lifestyle.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Are the recipes free?</button>
+                <div class="accordion-content">
+                    <p>Yes, all of our recipes are completely free to access. We believe that everyone should have access to healthy meal ideas.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">How often is the content updated?</button>
+                <div class="accordion-content">
+                    <p>We update our content weekly with new recipes, workout routines, and articles to keep you engaged and on track with your wellness goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><b>&copy; 2025 GreenBite. All rights reserved.</b></p>
+    <h2>Stay Updated</h2>
+    <p>Get our latest recipes, workout tips, and mindfulness guides delivered to your inbox.</p>
+    <div class="subscribe-box">
+        <input type="email" class="subscribe-input" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+    </div>
+</footer>
+    <script src="contact.js"></script>
+</body>
+</html>

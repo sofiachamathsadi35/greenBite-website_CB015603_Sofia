@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness</title>
+    <link rel="stylesheet" href="mindfulness.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/greenBite logo.jpeg" alt="GreenBite Logo">
+            <span>greenBite</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="recipes.html"><b>Recipes</b></a></li>
+            <li><a href="calculator.html"><b>Calculator</b></a></li>
+            <li><a href="workout.html"><b>Workout</b></a></li>
+            <li><a href="mindfulness.html"><b>Mindfulness</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1>Mindfulness & Meditation</h1>
+    <p><b>Discover inner peace and mental clarity through guided meditation and mindfulness practices.</b></p>
+</section>
+
+<div class="intro-image-container">
+    <img src="images/Meditating Peacefully.jpeg" 
+    alt="A person meditating peacefully" class="mindfulness-image">
+</div>
+
+<main class="sessions-container">
+    <div class="session-card" data-session-duration="10">
+        <div class="timer-box" style="display:none;">
+            <div class="timer" id="timer-10">10:00</div>
+            <div class="timer-controls">
+                <button class="stop-timer">Stop</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="session-title">Morning Meditation</h3>
+            <span class="session-tag">Meditation</span>
+            <p class="session-description">Start your day with clarity and intention</p>
+            <div class="card-footer">
+                <span class="session-time">10 min</span>
+                <button class="start-session-btn">Start</button>
+            </div>
+            <h6>"Breathe deeply and focus on the present moment - Step"</h6>
+        </div>
+    </div>
+    
+    <div class="session-card" data-session-duration="15">
+        <div class="timer-box" style="display:none;">
+            <div class="timer" id="timer-15">15:00</div>
+            <div class="timer-controls">
+                <button class="stop-timer">Stop</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="session-title">Stress Relief</h3>
+            <span class="session-tag">Breathing</span>
+            <p class="session-description">Release tension and find calm</p>
+            <div class="card-footer">
+                <span class="session-time">15 min</span>
+                <button class="start-session-btn">Start</button>
+            </div>
+            <h6>"Inhale for 4 counts, hold for 4, and exhale for 6 - Step"</h6>
+        </div>
+    </div>
+
+    <div class="session-card" data-session-duration="5">
+        <div class="timer-box" style="display:none;">
+            <div class="timer" id="timer-5">05:00</div>
+            <div class="timer-controls">
+                <button class="stop-timer">Stop</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="session-title">Gratitude Practice</h3>
+            <span class="session-tag">Reflection</span>
+            <p class="session-description">Cultivate appreciation and positive thinking</p>
+            <div class="card-footer">
+                <span class="session-time">5 min</span>
+                <button class="start-session-btn">Start</button>
+            </div>
+            <h6>"Reflect on three things you're grateful for today - Step"</h6>
+        </div>
+    </div>
+
+    <div class="session-card" data-session-duration="20">
+        <div class="timer-box" style="display:none;">
+            <div class="timer" id="timer-20">20:00</div>
+            <div class="timer-controls">
+                <button class="stop-timer">Stop</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="session-title">Body Scan</h3>
+            <span class="session-tag">Relaxation</span>
+            <p class="session-description">Connect with your body and release tension</p>
+            <div class="card-footer">
+                <span class="session-time">20 min</span>
+                <button class="start-session-btn">Start</button>
+            </div>
+            <h6>"Focus on each part of your body, from head to toe - Step"</h6>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p><b>&copy; 2025 GreenBite. All rights reserved.</b></p>
+    <h2>Stay Updated</h2>
+    <p>Get our latest recipes, workout tips, and mindfulness guides delivered to your inbox.</p>
+    <div class="subscribe-box">
+        <input type="email" class="subscribe-input" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+    </div>
+</footer>
+
+<script src="mindfulness.js"></script>
+</body>
+</html>
